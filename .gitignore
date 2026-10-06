@@ -1,0 +1,75 @@
+# ============================================================================
+#  .gitignore  -  M3331 GIF display repo
+# ============================================================================
+
+# --- build_all.bat output ---------------------------------------------------
+build_logs/
+*.log
+
+# --- CMake / MSVC (hid_gif_spiflash_tool) -----------------------------------
+build/
+out/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Testing/
+*.sln
+*.vcxproj.user
+*.suo
+*.obj
+*.exe
+*.dll
+*.lib
+*.exp
+*.pdb
+*.ilk
+*.idb
+.vs/
+
+# --- Keil MDK (ARM Compiler 6) ----------------------------------------------
+# intermediate / output folders
+[Oo]bj/
+[Ll]st/
+Objects/
+Listings/
+DebugConfig/
+RTE/_*/
+
+# intermediate & build artifacts
+*.o
+*.d
+*.crf
+*.dep
+*.axf
+*.bin
+*.hex
+*.htm
+*.lnp
+*.lst
+*.map
+*.plg
+*.sct
+*.scvd
+*.build_log.htm
+*.iex
+*.tra
+*.dbgconf
+*.uvguix.*
+*.uvoptx.bak
+*.uvprojx.bak
+JLinkLog.txt
+*.scvd
+
+# keep scatter files that are checked in on purpose (project KEIL/*.sct)
+!**/KEIL/*.sct
+!**/Keil/*.sct
+
+# --- OS / editor junk -------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+*.bak
+*.tmp
+*~
